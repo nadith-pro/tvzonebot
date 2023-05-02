@@ -1,0 +1,69 @@
+switch (command) {
+
+    case 'series': {
+
+        if (!isSUB) return
+
+        const startmsg = `
+🔰 TV Zone හි TV Series Menu වෙත සාදරයෙන් පිලිගනිමු. අවශ්‍ය TV Series එක තෝරා ගන්න.
+	
+`
+        const sections = [
+            {
+                title: "》 ENGLISH | TV Series",
+                rows: [
+                    { title: "☞︎︎︎  Arrow", rowId: prefix + 'arrow', description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  Game Of Thrones", rowId: "got", description: "SINHALA SUBTITLES" },
+                    { title: "☞︎︎︎  Deception", rowId: "deception", description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  Legend Of The Seeker", rowId: "legendoftheseeker", description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  Kung Fu Panda - The Dragon Knight", rowId: "kungfupandathedragonknight", description: "Sinhala Subtitles" },
+                ]
+            }
+        ]
+        const listMessage = {
+            text: startmsg,
+            footer: config.FOOTER1,
+            title: "*ＴＶ ＺＯＮＥ*",
+            buttonText: "View Menu",
+            sections
+        }
+        await conn.sendMessage(from, listMessage)
+    }
+        break
+
+    case 'arrow': {
+
+        if (!isSUB) return
+
+        const startmsg = `*🍁 Arrow 🍁*
+	
+□ After many years in a sheltered rich-boy life, Oliver Queen is stranded on an island after his father's yacht crashes and must learn to survive on his own. Five years later he is found alive and well after he was presumed to be dead. After he returns to his hometown of Starling City, he begins his crusade to rid it of nasty villains, drug dealers, mob bosses, and criminals by becoming an arrow-shooting vigilante.
+`
+        const sections = [
+            {
+                title: "》 Arrow | ENGLISH | TV Series",
+                rows: [
+                    { title: "☞︎︎︎  All", rowId: prefix + 'arrow_all', description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  Template", rowId: "arrow_temp", description: "SINHALA SUBTITLES" },
+                    { title: "☞︎︎︎  🅂🄴🄰🅂🄾🄽 ⓪①", rowId: "arrow_S01", description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  🅂🄴🄰🅂🄾🄽 ⓪②", rowId: "arrow_S02", description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  🅂🄴🄰🅂🄾🄽 ⓪③", rowId: "Arrow_S03", description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  🅂🄴🄰🅂🄾🄽 ⓪④", rowId: "Arrow_S04", description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  🅂🄴🄰🅂🄾🄽 ⓪⑤", rowId: "Arrow_S05", description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  🅂🄴🄰🅂🄾🄽 ⓪⑥", rowId: "Arrow_S06", description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  🅂🄴🄰🅂🄾🄽 ⓪⑦", rowId: "Arrow_S07", description: "Sinhala Subtitles" },
+                    { title: "☞︎︎︎  🅂🄴🄰🅂🄾🄽 ⓪⑧", rowId: "Arrow_S08", description: "Sinhala Subtitles" },
+                ]
+            }
+        ]
+        const listMessage = {
+            text: startmsg,
+            footer: config.FOOTER1,
+            title: "*ＴＶ ＺＯＮＥ*",
+            buttonText: "View Menu",
+            sections
+        }
+        await conn.sendMessage(from, listMessage)
+    }
+        break
+}
