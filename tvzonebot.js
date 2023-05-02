@@ -144,12 +144,12 @@ const connectToWA = async () => {
 				}
 			});
 
-			if (body == 'start' || body == 'alive' || body == 'Start' || body == 'Alive') {
+			if ( body == 'start' || body == 'alive' || body == 'Start' || body == 'Alive' ) {
 
 				await conn.sendMessage(from, { react: { text: '👾', key: mek.key } })
 				await conn.sendMessage(from, { text: "I'm Alive 🤩" })
 			}
-			if ( body.includes('group') ) {
+			if ( body.includes('group') || body == 'group' || body == 'Group' ) {
 
 				const cap = `We Wormly Welcome Our All New Members To ＴＶ ＺＯＮＥ
 
@@ -222,7 +222,7 @@ https://chat.whatsapp.com/Hhp5SqCOG8r5p8V18GcwMG
 
 ////////////////////////////////////////////// LINK TEMPLATES
 
-				/*case 'group':
+				case 'group':
 				case 'glink':
 				case 'tvzone':
 				case 'grouplink':
@@ -260,7 +260,7 @@ https://chat.whatsapp.com/Hhp5SqCOG8r5p8V18GcwMG
 					})
 
 				}
-					break*/
+					break
 
 				case 'tempsend': {
 
