@@ -156,6 +156,32 @@ const connectToWA = async () => {
 
 					break
 
+				case 'start': {
+
+					//	if (!isGroup) return
+
+					const startmsg = `*🍁𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 𝕋𝕍 ℤ𝕆ℕ𝔼 𝔹𝕆𝕋*
+	
+	🔰 TV Zone Group එකට පහළින් Join වන්න.
+					
+	 𖣔 Thank You 𖣔
+	 ━━━━━━━━━━`
+
+					const templateButtons = [
+						//{ urlButton: { displayText: 'WebSite 🖥️', url: 'https://tv.nadith.pro/' } },
+						//{ urlButton: { displayText: 'Join TV Zone', url: 'https://chat.whatsapp.com/Ltkp9BEYl632dE7T6bT58i' } },
+						{ quickReplyButton: { displayText: 'Owner', id: prefix + 'owner' } },
+					]
+					const buttonMessage = {
+						caption: startmsg,
+						footer: config.FOOTER1,
+						templateButtons: templateButtons,
+						image: { url: config.TV_LOGO }
+					}
+					conn.sendMessage(from, buttonMessage)
+
+				}
+					break
 
 				case 'series': {
 
