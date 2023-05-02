@@ -160,7 +160,7 @@ const connectToWA = async () => {
 				case 'alive': {
 
 					await conn.sendMessage(from, { react: { text: '👾', key: mek.key } })
-					await conn.sendMessage(from, { text: "I'm Alive" }, { quoted: mek })
+					await conn.sendMessage(from, { text: "I'm Alive 🤩" })
 
 				}
 					break
