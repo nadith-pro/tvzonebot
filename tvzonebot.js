@@ -193,7 +193,7 @@ https://chat.whatsapp.com/Hhp5SqCOG8r5p8V18GcwMG
 					
 ©Powered By @nadithpro | Founder & Admin`
 
-					await conn.sendMessage(sendjid[i], {
+					await conn.sendMessage(from, {
 						caption: cap,
 						footer: '©Powered By @nadithpro | Founder & Admin',
 						image: { url: config.TV_LOGO }
