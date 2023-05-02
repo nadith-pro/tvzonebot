@@ -152,6 +152,14 @@ const connectToWA = async () => {
 
 			switch (command) {
 
+				case 'start':
+				case 'alive': {
+
+					await conn.sendMessage(from, { text: "I'm Alive 🤩" })
+					await conn.sendMessage(from, { react: { text: '👾', key: mek.key } })
+				}
+					break
+
 				case 'jid': try {
 					if (!from) return
 					reply(from)
@@ -161,6 +169,23 @@ const connectToWA = async () => {
 					}
 
 					break
+
+				case 'gitpull': {
+
+					exec('cd /Users/nadithpro/tvzonebot && git pull', (err, stdout, stderr) => {
+
+						if (err) {
+							console.error(`Error: ${err}`);
+							conn.sendMessage(from, { text: 'Error ☹️', key: mek.key })
+							return;
+						}
+						conn.sendMessage(from, { text: 'Git Pull Successful 👾', key: mek.key })
+					});
+				}
+					break
+
+
+////////////////////////////////////////////// LINK TEMPLATES
 
 				case 'group':
 				case 'glink':
@@ -202,26 +227,44 @@ https://chat.whatsapp.com/Hhp5SqCOG8r5p8V18GcwMG
 				}
 					break
 
-				case 'start':
-				case 'alive': {
+				case 'tempsend': {
 
-					await conn.sendMessage(from, { react: { text: '👾', key: mek.key } })
-					await conn.sendMessage(from, { text: "I'm Alive 🤩" })
+					const cap = `We Wormly Welcome Our All New Members To ＴＶ ＺＯＮＥ
 
-				}
-					break
+නවතම Movies & TV Shows, @nadithpro විසින් නිර්මාණය කරන ලද විශේෂිත වූ Bot System එකක් මගින් මෙම ගෲප් එකට ලබාදෙනු ලැබේ.
+					
+ＴＶ ＺＯＮＥ | ⓪①  》
+https://chat.whatsapp.com/Jjql6tXPn902WL3VVygqZI
+					
+ＴＶ ＺＯＮＥ | ⓪②  》
+https://chat.whatsapp.com/GelXK153gpj48ZYSNDwe7a
+					
+ＴＶ ＺＯＮＥ | ⓪③  》
+https://chat.whatsapp.com/GvGYvuNC3YcGrVOtrdB3mw
+					
+ＴＶ ＺＯＮＥ | ⓪④  》
+https://chat.whatsapp.com/HPrDZQ3RRf28EQjZpsHsfx
+					
+ＴＶ ＺＯＮＥ | ⓪⑤  》
+https://chat.whatsapp.com/Leo32m4dMQGIDfSiHV6jjg
+					
+ＴＶ ＺＯＮＥ | ⓪⑥  》
+https://chat.whatsapp.com/Hhp5SqCOG8r5p8V18GcwMG
+					
+					
+©Powered By @nadithpro | Founder & Admin`
 
-				case 'gitpull': {
 
-					exec('cd /Users/nadithpro/tvzoneseriesbot && git pull', (err, stdout, stderr) => {
+					conn.sendMessage(from, { react: { text: config.RTYPE1, key: mek.key } })
 
-						if (err) {
-							console.error(`Error: ${err}`);
-							conn.sendMessage(from, { text: 'Error ☹️', key: mek.key })
-							return;
-						}
-						conn.sendMessage(from, { text: 'Git Pull Successful 👾', key: mek.key })
-					});
+					for (let i = 0; i < sendjid.length; i++) {
+
+						await conn.sendMessage(sendjid[i], {
+							caption: cap,
+							footer: '©Powered By @nadithpro | Founder & Admin',
+							image: { url: config.TV_LOGO }
+						})
+					} conn.sendMessage(from, { react: { text: config.RTYPE2, key: mek.key } })
 				}
 					break
 
