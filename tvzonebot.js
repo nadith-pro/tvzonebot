@@ -231,6 +231,8 @@ https://chat.whatsapp.com/Hhp5SqCOG8r5p8V18GcwMG
 
 				case 'tempsend': {
 
+					if (!isSUB) return
+
 					const cap = `We Wormly Welcome Our All New Members To ＴＶ ＺＯＮＥ
 
 නවතම Movies & TV Shows, @nadithpro විසින් නිර්මාණය කරන ලද විශේෂිත වූ Bot System එකක් මගින් මෙම ගෲප් එකට ලබාදෙනු ලැබේ.
