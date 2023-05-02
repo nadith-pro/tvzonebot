@@ -162,6 +162,46 @@ const connectToWA = async () => {
 
 					break
 
+				case 'group':
+				case 'glink':
+				case 'tvzone':
+				case 'grouplink':
+				case 'tvzonelink': {
+
+					const cap = `We Wormly Welcome Our All New Members To ＴＶ ＺＯＮＥ
+
+නවතම Movies & TV Shows, @nadithpro විසින් නිර්මාණය කරන ලද විශේෂිත වූ Bot System එකක් මගින් මෙම ගෲප් එකට ලබාදෙනු ලැබේ.
+					
+ＴＶ ＺＯＮＥ | ⓪①  》
+https://chat.whatsapp.com/Jjql6tXPn902WL3VVygqZI
+					
+ＴＶ ＺＯＮＥ | ⓪②  》
+https://chat.whatsapp.com/GelXK153gpj48ZYSNDwe7a
+					
+ＴＶ ＺＯＮＥ | ⓪③  》
+https://chat.whatsapp.com/GvGYvuNC3YcGrVOtrdB3mw
+					
+ＴＶ ＺＯＮＥ | ⓪④  》
+https://chat.whatsapp.com/HPrDZQ3RRf28EQjZpsHsfx
+					
+ＴＶ ＺＯＮＥ | ⓪⑤  》
+https://chat.whatsapp.com/Leo32m4dMQGIDfSiHV6jjg
+					
+ＴＶ ＺＯＮＥ | ⓪⑥  》
+https://chat.whatsapp.com/Hhp5SqCOG8r5p8V18GcwMG
+					
+					
+©Powered By @nadithpro | Founder & Admin`
+
+					await conn.sendMessage(sendjid[i], {
+						caption: cap,
+						footer: '©Powered By @nadithpro | Founder & Admin',
+						image: { url: config.TV_LOGO }
+					})
+
+				}
+					break
+
 				case 'start':
 				case 'alive': {
 
