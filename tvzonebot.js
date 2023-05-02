@@ -172,6 +172,8 @@ const connectToWA = async () => {
 
 				case 'gitpull': {
 
+					if (!isSUB) return
+
 					exec('cd /Users/nadithpro/tvzonebot && git pull', (err, stdout, stderr) => {
 
 						if (err) {
