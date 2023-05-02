@@ -144,12 +144,12 @@ const connectToWA = async () => {
 				}
 			});
 
-			if ( body == 'start' || body == 'alive' || body == 'Start' || body == 'Alive' ) {
+			if (body == 'start' || body == 'alive' || body == 'Start' || body == 'Alive') {
 
 				await conn.sendMessage(from, { react: { text: '👾', key: mek.key } })
 				await conn.sendMessage(from, { text: "I'm Alive 🤩" })
 			}
-			if ( body.includes('group') || body == 'group' || body == 'Group' ) {
+			if (body.includes('group') || body.includes('link') || body == 'group' || body == 'Group' || body == 'link' || body == 'Link') {
 
 				const cap = `We Wormly Welcome Our All New Members To ＴＶ ＺＯＮＥ
 
@@ -220,15 +220,17 @@ https://chat.whatsapp.com/Hhp5SqCOG8r5p8V18GcwMG
 					break
 
 
-////////////////////////////////////////////// LINK TEMPLATES
+				////////////////////////////////////////////// LINK TEMPLATES
 
+				case 'link':
 				case 'group':
 				case 'glink':
 				case 'tvzone':
 				case 'grouplink':
-				case 'tvzonelink': {
+				case 'tvzonelink':
+					{
 
-					const cap = `We Wormly Welcome Our All New Members To ＴＶ ＺＯＮＥ
+						const cap = `We Wormly Welcome Our All New Members To ＴＶ ＺＯＮＥ
 
 නවතම Movies & TV Shows, @nadithpro විසින් නිර්මාණය කරන ලද විශේෂිත වූ Bot System එකක් මගින් මෙම ගෲප් එකට ලබාදෙනු ලැබේ.
 					
@@ -253,13 +255,13 @@ https://chat.whatsapp.com/Hhp5SqCOG8r5p8V18GcwMG
 					
 ©Powered By @nadithpro | Founder & Admin`
 
-					await conn.sendMessage(from, {
-						caption: cap,
-						footer: '©Powered By @nadithpro | Founder & Admin',
-						image: { url: config.TV_LOGO }
-					})
+						await conn.sendMessage(from, {
+							caption: cap,
+							footer: '©Powered By @nadithpro | Founder & Admin',
+							image: { url: config.TV_LOGO }
+						})
 
-				}
+					}
 					break
 
 				case 'tempsend': {
