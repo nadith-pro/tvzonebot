@@ -14,7 +14,7 @@ cmd({
             for (let i = 0; i < sendjid.length; i++) {
 
                 await conn.sendMessage(sendjid[i], {
-                    caption: "After | 2019 - 2021 | 18+ | English | Movie Series | Sinhala Subtitles | TV Zone | " + config.FOOTER,
+                    caption: "After | 2019 - 2022 | 18+ | English | Movie Series | Sinhala Subtitles | TV Zone | " + config.FOOTER,
                     footer: config.FOOTER,
                     image: { url: "https://telegra.ph/file/b6cda88245576ed4de6b3.jpg" }
                 })
