@@ -39,7 +39,7 @@ cmd({
                 await conn.sendMessage(sendjid[i], {
                     document: { url: config.DBLINK + config.ENMVLINK + 'After_Ever_Happy_2022_@nadithpro.mkv' },
                     mimetype: config.MKVTYPE,
-                    fileName: '@nadithpro Ever Happy 2022 18+ .mkv'
+                    fileName: '@nadithpro After Ever Happy 2022 18+ .mkv'
                 })
             } conn.sendMessage(from, { react: { text: config.RTYPE2, key: mek.key } })
 
