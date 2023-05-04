@@ -2,37 +2,37 @@ module.exports = {
     apps: [
         {
             "name": "tvzone-01",
-            "script": "./tvzonebot1.js",
+            "script": "./index1.js",
             "instances": 1,
             "exec_mode": "cluster"
         }, {
             "name": "tvzone-02",
-            "script": "./tvzonebot2.js",
+            "script": "./index2.js",
             "instances": 1,
             "exec_mode": "cluster"
         },{
             "name": "tvzone-03",
-            "script": "./tvzonebot3.js",
+            "script": "./index3.js",
             "instances": 1,
             "exec_mode": "cluster"
         },{
             "name": "tvzone-04",
-            "script": "./tvzonebot4.js",
+            "script": "./index4.js",
             "instances": 1,
             "exec_mode": "cluster"
         },{
             "name": "tvzone-05",
-            "script": "./tvzonebot5.js",
+            "script": "./index5.js",
             "instances": 1,
             "exec_mode": "cluster"
         },{
             "name": "tvzone-06",
-            "script": "./tvzonebot6.js",
+            "script": "./index6.js",
             "instances": 1,
             "exec_mode": "cluster"
         },{
             "name": "tvzone-07",
-            "script": "./tvzonebot7.js",
+            "script": "./index7.js",
             "instances": 1,
             "exec_mode": "cluster"
         }
