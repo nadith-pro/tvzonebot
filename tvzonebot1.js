@@ -2,13 +2,7 @@
 //---------------------------Powered_By_@nadithpro---------------------------\\
 
 const sendjid = [
-	"120363147199269922@g.us", //group1
-	"120363150136785770@g.us", //group2
-	"120363148843656696@g.us", //group3
-	"120363129257594933@g.us", //group4
-	"120363129742656377@g.us", //group5
-	"120363131670750632@g.us", //group6
-	"120363148588064645@g.us"] //group7
+	"120363147199269922@g.us"] //group1
 
 let res
 
@@ -37,7 +31,7 @@ const prefix = '.'
 const owner = ['94761327688']
 const axios = require('axios')
 const connectToWA = async () => {
-	const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
+	const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/auth_info_baileys1/')
 	const conn = makeWASocket({
 		logger: P({ level: 'silent' }),
 		printQRInTerminal: true,
@@ -55,11 +49,11 @@ const connectToWA = async () => {
 
 			const path = require('path');
 
-			/*fs.readdirSync("./plugins/").forEach((plugin) => {
+			fs.readdirSync("./plugins/").forEach((plugin) => {
 				if (path.extname(plugin).toLowerCase() == ".js") {
 					require("./plugins/" + plugin);
 				}
-			});*/
+			});
 
 			fs.readdirSync("./plugins/Movies/English/").forEach((plugin) => {
 				if (path.extname(plugin).toLowerCase() == ".js") {

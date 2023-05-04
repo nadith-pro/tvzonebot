@@ -2,9 +2,9 @@
   "name": "TV Zone Bot ",
   "description": "Multi Device Whatsapp Bot By NadithPro",
   "version": "2.0.1",
-  "main": "tvzonebot.js",
+  "main": "TV Zone",
   "scripts": {
-    "start": "node tvzonebot.js"
+    "start": "node tvzonebot1.js && node tvzonebot2.js && node tvzonebot3.js && node tvzonebot4.js && node tvzonebot5.js && node tvzonebot6.js && node tvzonebot7.js"
   },
   "keywords": [
     "whatsapp",
