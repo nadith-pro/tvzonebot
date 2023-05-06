@@ -4,7 +4,7 @@
   "version": "2.0.1",
   "main": "TV Zone",
   "scripts": {
-    "start": "node index1.js && node index2.js && node index3.js && node index4.js && node index5.js && node index6.js && node index7.js"
+    "start": "node tvzonebot.js"
   },
   "keywords": [
     "whatsapp",
