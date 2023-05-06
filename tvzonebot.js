@@ -55,11 +55,11 @@ const connectToWA = async () => {
 
 			const path = require('path');
 
-			/*fs.readdirSync("./plugins/").forEach((plugin) => {
+			fs.readdirSync("./plugins/").forEach((plugin) => {
 				if (path.extname(plugin).toLowerCase() == ".js") {
 					require("./plugins/" + plugin);
 				}
-			});*/
+			});
 
 			fs.readdirSync("./plugins/Movies/English/").forEach((plugin) => {
 				if (path.extname(plugin).toLowerCase() == ".js") {
