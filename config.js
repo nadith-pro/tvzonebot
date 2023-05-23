@@ -25,7 +25,7 @@ module.exports = {
 	MKVTYPE: process.env.MKVTYPE === undefined ? 'video/x-matroska' : process.env.MKVTYPE,
 	MKVFILE: process.env.MKVFILE === undefined ? ' .mkv' : process.env.MKVFILE,
 
-	DBLINK: process.env.DBLINK === undefined ? 'https://cloud.nadith.pro/' : process.env.DBLINK,
+	DBLINK: process.env.DBLINK === undefined ? 'https://cloud.nadithpro.repl.co/' : process.env.DBLINK,
 
 	ENMVLINK: process.env.ENMVLINK === undefined ? 'en_mv/' : process.env.ENMVLINK,
 	ENTVLINK: process.env.ENTVLINK === undefined ? 'en_tv/' : process.env.ENTVLINK,
