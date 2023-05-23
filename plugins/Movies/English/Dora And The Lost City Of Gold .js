@@ -1,5 +1,11 @@
 const { cmd, commands } = require('../../../commands')
 
+let delays = (60000)
+
+const delay = (delayInms) => {
+	return new Promise(resolve => setTimeout(resolve, delayInms));
+}
+
 cmd({
     pattern: "doraandthelostcityofgold",
     filename: __filename
@@ -26,6 +32,22 @@ cmd({
                     mimetype: config.MKVTYPE,
                     fileName: '@nadithpro Dora And The Lost City Of Gold 2019 .mkv'
                 })
+                let delayres1 = await delay(delays);
+
+                await conn.sendMessage(sendjid[i], {
+                    document: { url: config.DBLINK + config.ENMVLINK + 'Dora_And_The_Lost_City_Of_Gold_2019_@nadithpro.mkv' },
+                    mimetype: config.MKVTYPE,
+                    fileName: '@nadithpro Dora And The Lost City Of Gold 2019 .mkv'
+                })
+                let delayres2 = await delay(delays);
+
+                await conn.sendMessage(sendjid[i], {
+                    document: { url: config.DBLINK + config.ENMVLINK + 'Dora_And_The_Lost_City_Of_Gold_2019_@nadithpro.mkv' },
+                    mimetype: config.MKVTYPE,
+                    fileName: '@nadithpro Dora And The Lost City Of Gold 2019 .mkv'
+                })
+                let delayres3 = await delay(delays);
+
             } conn.sendMessage(from, { react: { text: config.RTYPE2, key: mek.key } })
 
         } catch (e) {
